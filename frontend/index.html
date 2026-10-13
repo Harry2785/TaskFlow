@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskFlow — Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <main class="container">
+        <header class="header">
+            <p class="eyebrow">YOUR PERSONAL WORKSPACE</p>
+            <h1>TaskFlow<span>.</span></h1>
+            <p class="subtitle">One task at a time. Keep moving forward.</p>
+        </header>
+
+        <section class="add-section">
+            <form id="taskForm">
+                <label for="taskInput">What do you need to get done?</label>
+                <div class="input-row">
+                    <input id="taskInput" type="text" placeholder="e.g. Finish Calculus assignment" maxlength="200"
+                        required>
+                    <button type="submit" id="addButton">+ Add task</button>
+                </div>
+            </form>
+            <p id="message" role="status"></p>
+        </section>
+
+        <section class="tasks-section">
+            <div class="section-heading">
+                <h2>My tasks</h2>
+                <span id="taskCount">0 tasks</span>
+            </div>
+
+            <ul id="taskList"></ul>
+        </section>
+
+        <footer>
+            Your progress is saved automatically.
+        </footer>
+    </main>
+</body>
+
+</html>
